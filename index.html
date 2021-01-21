@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, papel o tijeras – Juego JavaScript</title>
+    <link rel="stylesheet" href="master.css">
+</head>
+<body>
+    <div class="contentWrapper">
+        <h1>¿Piedra, papel o tijeras?</h1>
+        <div class="gameWrapper">
+            <div id="piedraBTN" class="piedraBTN" onclick="jugar(piedra, opcionCPU)">✊ PIEDRA</div>
+            <div id="papelBTN" class="papelBTN" onclick="jugar(papel, opcionCPU)">🖐 PAPEL</div>
+            <div id="tijerasBTN" class="tijerasBTN" onclick="jugar(tijeras, opcionCPU)">✌️ TIJERAS</div>
+        </div>
+        <p>By <a href="#">Federico Tejedor Llorente</a></p>
+        <p><a href="#">Volver al Portfolio 💼</a></p>
+    </div>
+    <div id="pantallaFinal" class="pantallaFinal sinPantallaFinal">
+        <h1 id="tituloDeLaResolucion">Título de la resolución</h1>
+        <div id="volverAJugarBTN" class="volverAJugar" onclick="location.reload()">Volver a jugar</div>
+    </div>
+    <script src="master.js"></script>
+</body>
+</html>

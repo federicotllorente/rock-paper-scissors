@@ -15,15 +15,15 @@ function jugar(user, cpu) {
             switch(cpu) {
                 case piedra:
                     pantallaFinal.classList.remove("sinPantallaFinal");
-                    tituloDeLaResolucion.innerHTML = "Empate! Tanto tú como el CPU han escogido piedra.";
+                    tituloDeLaResolucion.innerHTML = "There's a tie! Both you and the CPU have chosen rock.";
                     break;
                 case papel:
                     pantallaFinal.classList.remove("sinPantallaFinal");
-                    tituloDeLaResolucion.innerHTML = "Gana el CPU con papel! Lamentablemente has escogido piedra.";
+                    tituloDeLaResolucion.innerHTML = "You lose... Sorry, but the CPU chose paper and you rock.";
                     break;
                 case tijeras:
                     pantallaFinal.classList.remove("sinPantallaFinal");
-                    tituloDeLaResolucion.innerHTML = "Ganaste! El CPU ha escogido tijeras, y tú piedra.";
+                    tituloDeLaResolucion.innerHTML = "You win! Congrats. CPU chose scissors, but you rock.";
                     break;
             }
             break;
@@ -31,15 +31,15 @@ function jugar(user, cpu) {
             switch(cpu) {
                 case piedra:
                     pantallaFinal.classList.remove("sinPantallaFinal");
-                    tituloDeLaResolucion.innerHTML = "Ganaste! El CPU ha escogido piedra, y tú papel.";
+                    tituloDeLaResolucion.innerHTML = "You win! Congrats. CPU chose rock, but you paper.";
                     break;
                 case papel:
                     pantallaFinal.classList.remove("sinPantallaFinal");
-                    tituloDeLaResolucion.innerHTML = "Empate! Tanto tú como el CPU han escogido papel.";
+                    tituloDeLaResolucion.innerHTML = "There's a tie! Both you and the CPU have chosen paper.";
                     break;
                 case tijeras:
                     pantallaFinal.classList.remove("sinPantallaFinal");
-                    tituloDeLaResolucion.innerHTML = "Gana el CPU con tijeras! Lamentablemente has escogido papel.";
+                    tituloDeLaResolucion.innerHTML = "You lose... Sorry, but the CPU chose scissors and you paper.";
                     break;
             }
             break;
@@ -47,63 +47,20 @@ function jugar(user, cpu) {
             switch(cpu) {
                 case piedra:
                     pantallaFinal.classList.remove("sinPantallaFinal");
-                    tituloDeLaResolucion.innerHTML = "Gana el CPU con piedra! Lamentablemente has escogido tijeras.";
+                    tituloDeLaResolucion.innerHTML = "You lose... Sorry, but the CPU chose rock and you scissors.";
                     break;
                 case papel:
                     pantallaFinal.classList.remove("sinPantallaFinal");
-                    tituloDeLaResolucion.innerHTML = "Ganaste! El CPU ha escogido papel, y tú tijeras.";
+                    tituloDeLaResolucion.innerHTML = "You win! Congrats. CPU chose paper, but you scissors.";
                     break;
                 case tijeras:
                     pantallaFinal.classList.remove("sinPantallaFinal");
-                    tituloDeLaResolucion.innerHTML = "Empate! Tanto tú como el CPU han escogido tijeras.";
+                    tituloDeLaResolucion.innerHTML = "There's a tie! Both you and the CPU have chosen scissors.";
                     break;
             }
             break;
         default:
             pantallaFinal.classList.remove("sinPantallaFinal");
-            tituloDeLaResolucion.innerHTML = "Hubo un error en el juego.";
+            tituloDeLaResolucion.innerHTML = "Oops! There's an error out there. Please, reload the page.";
     }
 }
-
-// CON UN CONDICIONAL IF/ELSE
-
-// function jugar(user, cpu) {
-//     if(user != cpu) {
-//         if(user == piedra && cpu == tijeras) {
-//             pantallaFinal.classList.remove("sinPantallaFinal");
-//             tituloDeLaResolucion.innerHTML = "Ganaste! El CPU ha escogido tijeras, y tú piedra.";
-//         } else if(user == piedra && cpu == papel) {
-//             pantallaFinal.classList.remove("sinPantallaFinal");
-//             tituloDeLaResolucion.innerHTML = "Gana el CPU con papel! Lamentablemente has escogido piedra.";
-//         } else if(user == papel && cpu == piedra) {
-//             pantallaFinal.classList.remove("sinPantallaFinal");
-//             tituloDeLaResolucion.innerHTML = "Ganaste! El CPU ha escogido piedra, y tú papel.";
-//         } else if(user == papel && cpu == tijeras) {
-//             pantallaFinal.classList.remove("sinPantallaFinal");
-//             tituloDeLaResolucion.innerHTML = "Gana el CPU con tijeras! Lamentablemente has escogido papel.";
-//         } else if(user == tijeras && cpu == papel) {
-//             pantallaFinal.classList.remove("sinPantallaFinal");
-//             tituloDeLaResolucion.innerHTML = "Ganaste! El CPU ha escogido papel, y tú tijeras.";
-//         } else if(user == tijeras && cpu == piedra) {
-//             pantallaFinal.classList.remove("sinPantallaFinal");
-//             tituloDeLaResolucion.innerHTML = "Gana el CPU con piedra! Lamentablemente has escogido tijeras.";
-//         } else {
-//             pantallaFinal.classList.remove("sinPantallaFinal");
-//             tituloDeLaResolucion.innerHTML = "Hubo un error en el juego (Error 1).";
-//         }
-//     } else {
-//         if(user = cpu == piedra) {
-//             pantallaFinal.classList.remove("sinPantallaFinal");
-//             tituloDeLaResolucion.innerHTML = "Empate! Tanto tú como el CPU han escogido piedra.";
-//         } else if(user = cpu == papel) {
-//             pantallaFinal.classList.remove("sinPantallaFinal");
-//             tituloDeLaResolucion.innerHTML = "Empate! Tanto tú como el CPU han escogido papel.";
-//         } else if(user = cpu == tijeras) {
-//             pantallaFinal.classList.remove("sinPantallaFinal");
-//             tituloDeLaResolucion.innerHTML = "Empate! Tanto tú como el CPU han escogido tijeras.";
-//         } else {
-//             pantallaFinal.classList.remove("sinPantallaFinal");
-//             tituloDeLaResolucion.innerHTML = "Hubo un error en el juego (Error 2).";
-//         }
-//     }
-// }
